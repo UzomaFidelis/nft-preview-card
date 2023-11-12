@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapi.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+a,
+a:link {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+}
+
+a:visited {
+    color: hsl(0, 0%, 100%);
+}
+
+a:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+}
+
+div>p {
+    color: hsl(215, 51%, 70%);
+}
+
+div h1 {
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+
+hr {
+    border-color: hsl(215, 32%, 27%);
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.avatar {
+    height: 2.0em;
+    float: left;
+    outline-style: solid;
+    outline-width: 1px;
+    outline-color: white;
+    border-radius: 100%;
+    margin-right: 1em;
+}
+
+.card-body {
+    background-color: hsl(216, 50%, 16%);
+    padding: 25px;
+    margin: 50px auto;
+    width: 75%;
+    border-radius: 15px;
+    box-shadow: 0px 10px 5px 15px hsl(200, 60%, 9%), 0px 20px 15px 25px hsl(200, 60%, 9.5%);
+}
+
+.card-foot {
+    margin-top: 20px;
+}
+
+.card-img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 9px;
+
+}
+
+
+.card-text {
+    line-height: 1.6;
+    margin: 5px auto 5px auto;
+    font-weight: 300;
+}
+
+.flex-container {
+    display: flex;
+    position: relative;
+}
+
+.foot-text {
+    margin: 7px auto 5px 0;
+    font-weight: 300;
+}
+
+.icon {
+    padding: 16px 5px 0 0;
+}
+
+.image-container {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 99%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: hsl(178, 100%, 50%);
+    border-radius: 9px;
+}
+
+.image-container:hover .overlay {
+    opacity: 0.5;
+}
+
+.time {
+    position: absolute;
+    right: 0;
+}
+
+.time-left {
+    font-weight: 400;
+}
+
+.value {
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+}
+
+.view-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+@media only screen and (min-width: 800px) {
+    .card-body {
+        width: 18em;
+        /* padding: 1.5%; */
+        padding: 25px;
+        margin: 70px auto;
+    }
+}
