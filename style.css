@@ -1,26 +1,25 @@
 @import url('https://fonts.googleapi.com/css2?family=Outfit:wght@300;400;600&display=swap');
 
-a,
-a:link {
-    color: hsl(0, 0%, 100%);
-    text-decoration: none;
-}
-
-a:visited {
-    color: hsl(0, 0%, 100%);
-}
-
-a:hover {
-    color: hsl(178, 100%, 50%);
-}
-
 body {
-    background-color: hsl(217, 54%, 11%);
+    background-color: hwb(216 5% 83%);
     font-family: 'Outfit', sans-serif;
 }
 
 div>p {
     color: hsl(215, 51%, 70%);
+}
+
+div.card-body a:link {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+}
+
+div.card-body a:visited {
+    color: hsl(0, 0%, 100%);
+}
+
+div.card-body a:hover {
+    color: hsl(178, 100%, 50%);
 }
 
 div h1 {
@@ -73,7 +72,6 @@ hr {
     width: 100%;
     object-fit: cover;
     border-radius: 9px;
-
 }
 
 
@@ -111,12 +109,12 @@ hr {
     width: 100%;
     opacity: 0;
     transition: .3s ease;
-    background-color: hsl(178, 100%, 50%);
+    background-color: hsla(178, 100%, 50%, 0.521);
     border-radius: 9px;
 }
 
 .image-container:hover .overlay {
-    opacity: 0.5;
+    opacity: 1;
 }
 
 .time {
@@ -144,8 +142,7 @@ hr {
 @media only screen and (min-width: 800px) {
     .card-body {
         width: 18em;
-        /* padding: 1.5%; */
         padding: 25px;
-        margin: 70px auto;
+        margin: 120px auto;
     }
 }
